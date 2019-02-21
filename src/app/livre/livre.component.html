@@ -1,0 +1,18 @@
+<!-- <div class="ui grid container">
+  <div class="ui ten column centered">
+    <div class="column center">
+        
+    </div>
+  </div>
+</div> -->
+
+<div *ngIf="livre" class="ui one column center aligned container grid">
+    <div class="column ten wide">
+        <h1> {{livre.title}} </h1>
+        <img class="ui big image center container" [src]="livre.image">
+        <p> {{livre.subtitle}} </p>
+        <p> Sorti le {{livre.date | date}}</p>
+        <button class="ui blue button" (click)='goBack()'>Back</button>
+    </div>
+ </div>
+

@@ -1,0 +1,16 @@
+<div id="blocImg" class="ui grid">
+  <div *ngFor="let livre of livres">
+    <div class="column">
+      <div class="ui segment">
+          <a routerLink = '/magazines/{{livre.id}}'><img class="ui medium image" [src]="livre.image"></a>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+        <div class="two column wide">
+            <button class="ui green button" (click)='onSaveMag()'>Save magazines</button>
+        </div>
+        
+  </div>
+  
+</div>
