@@ -39,8 +39,7 @@ export class LivreService {
   }
 
   getMag() {
-    return this.httpClient
-      .get<any[]>('https://angulartest-e7f00.firebaseio.com/livres.json')
+    this.httpClient.get<Livre[]>('https://angulartest-e7f00.firebaseio.com/livres.json')
       .subscribe(
         (response) => {
           this.livres = response;
